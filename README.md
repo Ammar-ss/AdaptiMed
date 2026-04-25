@@ -1,6 +1,6 @@
 # AdaptiMed: Guideline-Aware Adaptive Agentic Workflow for Medical Diagnosis
 
-> A faithful reimplementation of MedAgent-Pro (ICLR 2026) extended with three contributions: guideline-grounded tool selection, calibrated iterative depth, and parallel tier orchestration. Technical report submitted to Prof. Xiaomeng Li's lab, HKUST.
+> A faithful reimplementation of MedAgent-Pro (ICLR 2026) extended with three contributions: guideline-grounded tool selection, calibrated iterative depth, and parallel tier orchestration.
 
 ---
 
@@ -105,6 +105,8 @@ H(P(Y | E_1:k)) <= tau_k^G  AND  E[delta_KL_{k+1}] <= epsilon
 Where `tau_k^G` is retrieved dynamically from the relevant clinical guideline at inference time (EGS 2020, ACC/AHA, WHO ICD-11), not fixed during training. The same trained system transfers across glaucoma, cardiology, and rare disease without retraining.
 
 The proposal is in `Proposal.pdf`. Implementation is in progress.
+
+The main goal is to find out **when has the system seen enough to commit?**
 
 ---
 
